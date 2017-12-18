@@ -7,7 +7,7 @@ class Book < ApplicationRecord
   has_many :line_items, dependent: :destroy
   has_many :rates, dependent: :destroy
 
-  mount_uploader :image_url, ImageUploader
+  # mount_uploader :image_url, ImageUploader
 
   searchable do
     text :title, :boost => 2
